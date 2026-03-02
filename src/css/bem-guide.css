@@ -1,0 +1,387 @@
+/**
+ * ============================================
+ * GUÍA DE NOMENCLATURA BEM - LANDING PAGE
+ * ============================================
+ * 
+ * BEM = Block Element Modifier
+ * Es una metodología para nombrar clases de CSS de manera clara y mantenible.
+ * 
+ * ESTRUCTURA:
+ * .block {}
+ * .block__element {}
+ * .block--modifier {}
+ * 
+ * ============================================
+ */
+
+/* ============================================
+   1. BLOQUES PRINCIPALES DEL LANDING
+   ============================================ */
+
+/* 
+   Block: Es el componente principal independiente
+   Ejemplo: .landing-header, .landing-hero, .landing-footer
+*/
+
+/* --- HEADER --- */
+.landing-header {}
+.landing-header__container {}
+.landing-header__logo {}
+.landing-header__nav {}
+.landing-header__menu {}
+.landing-header__menu-item {}
+.landing-header__cta {}
+
+/* --- HERO --- */
+.landing-hero {}
+.landing-hero__container {}
+.landing-hero__content {}
+.landing-hero__title {}
+.landing-hero__subtitle {}
+.landing-hero__text {}
+.landing-hero__cta-group {}
+.landing-hero__cta {}
+.landing-hero__cta--secondary {}
+.landing-hero__image {}
+.landing-hero__image-wrapper {}
+
+/* --- FEATURES --- */
+.landing-features {}
+.landing-features__container {}
+.landing-features__header {}
+.landing-features__title {}
+.landing-features__subtitle {}
+.landing-features__grid {}
+.landing-features__card {}
+.landing-features__card--featured {}
+.landing-features__card-icon {}
+.landing-features__card-title {}
+.landing-features__card-text {}
+.landing-features__card-link {}
+
+/* --- ABOUT --- */
+.landing-about {}
+.landing-about__container {}
+.landing-about__grid {}
+.landing-about__content {}
+.landing-about__title {}
+.landing-about__text {}
+.landing-about__list {}
+.landing-about__list-item {}
+.landing-about__image {}
+.landing-about__image-wrapper {}
+
+/* --- CTA --- */
+.landing-cta {}
+.landing-cta__container {}
+.landing-cta__content {}
+.landing-cta__title {}
+.landing-cta__subtitle {}
+.landing-cta__form {}
+.landing-cta__input {}
+.landing-cta__input--email {}
+.landing-cta__input--name {}
+.landing-cta__button {}
+.landing-cta__disclaimer {}
+
+/* --- FOOTER --- */
+.landing-footer {}
+.landing-footer__container {}
+.landing-footer__grid {}
+.landing-footer__brand {}
+.landing-footer__logo {}
+.landing-footer__description {}
+.landing-footer__links {}
+.landing-footer__link {}
+.landing-footer__social {}
+.landing-footer__social-link {}
+.landing-footer__copyright {}
+.landing-footer__legal {}
+
+
+/* ============================================
+   2. ELEMENTOS COMUNES (REUTILIZABLES)
+   ============================================ */
+
+/* --- BOTONES --- */
+.btn {}
+.btn--primary {}
+.btn--secondary {}
+.btn--outline {}
+.btn--ghost {}
+.btn--small {}
+.btn--large {}
+.btn--full-width {}
+.btn__icon {}
+.btn__text {}
+
+/* --- TARJETAS / CARDS --- */
+.card {}
+.card--hover {}
+.card--featured {}
+.card__header {}
+.card__body {}
+.card__footer {}
+.card__image {}
+.card__icon {}
+.card__title {}
+.card__subtitle {}
+.card__text {}
+.card__link {}
+.card__badge {}
+
+/* --- FORMULARIOS --- */
+.form-group {}
+.form-group--error {}
+.form-group--success {}
+.form__label {}
+.form__input {}
+.form__input--text {}
+.form__input--email {}
+.form__input--tel {}
+.form__input--textarea {}
+.form__input--select {}
+.form__error {}
+.form__success {}
+.form__hint {}
+
+/* --- TÍTULOS Y TEXTOS --- */
+.title {}
+.title--h1 {}
+.title--h2 {}
+.title--h3 {}
+.title--h4 {}
+.title--h5 {}
+.title--h6 {}
+.title--primary {}
+.title--secondary {}
+.title--light {}
+.title--dark {}
+
+.text {}
+.text--lead {}
+.text--small {}
+.text--muted {}
+.text--primary {}
+.text--secondary {}
+
+/* --- IMÁGENES --- */
+.image {}
+.image--rounded {}
+.image--circle {}
+.image--shadow {}
+.image--border {}
+.image__wrapper {}
+
+/* --- ICONOS --- */
+.icon {}
+.icon--sm {}
+.icon--md {}
+.icon--lg {}
+.icon--xl {}
+
+/* --- BADGES / ETIQUETAS --- */
+.badge {}
+.badge--primary {}
+.badge--secondary {}
+.badge--success {}
+.badge--warning {}
+.badge--error {}
+.badge--info {}
+
+/* --- SPINNERS / LOADERS --- */
+.spinner {}
+.spinner--sm {}
+.spinner--md {}
+.spinner--lg {}
+
+
+/* ============================================
+   3. UTILIDADES DE MODIFICADORES
+   ============================================ */
+
+/* --- COLORES --- */
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+
+/* --- ESPACIOS --- */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--space-sm); }
+.mt-2 { margin-top: var(--space-md); }
+.mt-3 { margin-top: var(--space-lg); }
+.mt-4 { margin-top: var(--space-xl); }
+.mt-5 { margin-top: var(--space-2xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--space-sm); }
+.mb-2 { margin-bottom: var(--space-md); }
+.mb-3 { margin-bottom: var(--space-lg); }
+.mb-4 { margin-bottom: var(--space-xl); }
+.mb-5 { margin-bottom: var(--space-2xl); }
+
+.pt-0 { padding-top: 0; }
+.pt-1 { padding-top: var(--space-sm); }
+.pt-2 { padding-top: var(--space-md); }
+.pt-3 { padding-top: var(--space-lg); }
+.pt-4 { padding-top: var(--space-xl); }
+.pt-5 { padding-top: var(--space-2xl); }
+
+.pb-0 { padding-bottom: 0; }
+.pb-1 { padding-bottom: var(--space-sm); }
+.pb-2 { padding-bottom: var(--space-md); }
+.pb-3 { padding-bottom: var(--space-lg); }
+.pb-4 { padding-bottom: var(--space-xl); }
+.pb-5 { padding-bottom: var(--space-2xl); }
+
+/* --- ALINEACIÓN --- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.align-center { align-items: center; }
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }
+
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+/* --- VISIBILIDAD --- */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+.hide-xs { display: none; }
+.hide-sm { display: none; }
+.hide-md { display: none; }
+.hide-lg { display: none; }
+.hide-xl { display: none; }
+
+@media (min-width: 480px) { .hide-sm { display: none; } }
+@media (min-width: 768px) { .hide-md { display: none; } }
+@media (min-width: 992px) { .hide-lg { display: none; } }
+@media (min-width: 1200px) { .hide-xl { display: none; } }
+
+
+/* ============================================
+   4. ELEMENTOS HTML COMUNES EN LANDING
+   ============================================ */
+
+/* 
+   Lista de elementos HTML que puedes usar:
+   
+   - <header> - Encabezado de página o sección
+   - <nav> - Navegación principal
+   - <main> - Contenido principal
+   - <section> - Sección genérica
+   - <article> - Contenido independiente
+   - <aside> - Contenido relacionado
+   - <footer> - Pie de página
+   
+   - <h1> a <h6> - Títulos (usar con clases .title--h1, etc.)
+   - <p> - Párrafos (usar con clases .text)
+   - <a> - Enlaces
+   - <button> - Botones (usar con clase .btn)
+   - <input> - Campos de entrada
+   - <textarea> - Área de texto
+   - <select> - Menú desplegable
+   
+   - <img> - Imágenes
+   - <picture> - Imágenes responsive
+   - <figure> - Figura con descripción
+   - <figcaption> - Descripción de figura
+   - <svg> - Gráficos vectoriales
+   
+   - <ul> - Lista desordenada
+   - <ol> - Lista ordenada
+   - <li> - Elemento de lista
+   
+   - <div> - Contenedor genérico
+   - <span> - Contenedor en línea
+   
+   - <table> - Tabla
+   - <thead> - Encabezado de tabla
+   - <tbody> - Cuerpo de tabla
+   - <tr> - Fila de tabla
+   - <td> - Celda de tabla
+   
+   - <form> - Formulario
+   - <label> - Etiqueta de formulario
+   
+   - <video> - Video
+   - <audio> - Audio
+   - <iframe> - Contenido embebido
+*/
+
+
+/* ============================================
+   5. EJEMPLO COMPLETO DE USO
+   ============================================ */
+
+/* 
+   HTML:
+   <section class="landing-features">
+       <div class="grid-container">
+           <div class="grid-row">
+               <div class="grid-col col-10 col-offset-1">
+                   <div class="landing-features__header">
+                       <h2 class="landing-features__title title title--h2">Título</h2>
+                       <p class="landing-features__subtitle text text--lead">Subtítulo</p>
+                   </div>
+                   <div class="landing-features__grid">
+                       <div class="landing-features__card card card--hover">
+                           <div class="card__icon">
+                               <svg class="icon icon--lg">...</svg>
+                           </div>
+                           <h3 class="card__title">Título</h3>
+                           <p class="card__text">Texto</p>
+                           <a href="#" class="card__link">Leer más</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+*/
+
+
+/* ============================================
+   6. REGLAS DE ORO BEM
+   ============================================ */
+
+/*
+   1. BLOCK: Nombre del componente principal
+      - Siempre en minúsculas
+      - Separar palabras con guiones: .landing-header
+      - Usar prefijos si es necesario: .lp-, .landing-
+   
+   2. ELEMENT: Parte del bloque
+      - Separado por doble guión bajo: __
+      - Siempre pertenece a un bloque: .block__element
+      - No usar fuera del contexto del bloque
+   
+   3. MODIFIER: Variación del bloque/elemento
+      - Separado por doble guión medio: --
+      - Indica estado o variación: .btn--primary
+      - Siempre acompañar al elemento base
+   
+   4. NO HACER:
+      - .block__element__element (anidado innecesario)
+      - Usar ID para estilos (#id)
+      - Usar selectores descendientes largos
+      - Mezclar con clases no-BEM
+   
+   5. SÍ HACER:
+      - Mantener la estructura plana
+      - Usar mixins (clases combinadas)
+      - Comentar el código
+      - Ser consistente en todo el proyecto
+*/
