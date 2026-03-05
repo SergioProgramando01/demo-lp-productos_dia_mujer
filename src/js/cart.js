@@ -10,7 +10,7 @@
 
     var CartSystem = {
         cart: [],
-        whatsappNumber: '573001234567',
+        whatsappNumber: '573054786001',
         
         init: function() {
             this.loadCart();
